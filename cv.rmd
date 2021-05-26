@@ -22,7 +22,7 @@ source("cv_printing_functions.r")
 
 # Read in all data and initialize a CV printer object
 CV <- create_CV_object(
-  data_location = "https://docs.google.com/spreadsheets/d/1OATnKUyM39hQmle_Mi3mgrfqnAs1BtI72PYV8AuwKh4",  
+  data_location = "https://docs.google.com/spreadsheets/d/1yUkryRvvb0y7aLyCgiLaD7JHopFF2xo9xNSWwb52Tag",  
   pdf_mode = params$pdf_mode
 )
 
@@ -83,7 +83,7 @@ Disclaimer {#disclaimer}
 
 Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
 
-The source code is available [on github.com/ricardomattos05/Resume](https://github.com/ricardomattos05/Resume).
+The source code is available [on github.com/ricardomattos05/Resume_en](https://github.com/ricardomattos05/Resume_en).
 
 Last updated on `r Sys.Date()`.
 
@@ -100,7 +100,7 @@ Ricardo Mattos {#title}
 CV %<>% print_text_block("intro") 
 ```
 
-Experiência {data-icon=suitcase}
+Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ::: aside
@@ -118,7 +118,7 @@ CV %<>% print_section('industry_positions')
 <br>
 <br>
 
-Formação {data-icon=graduation-cap data-concise=true}
+Formation {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -146,16 +146,16 @@ CV %<>% print_section('research_positions')
 <!-- ::: -->
 
 
-Cursos Realizados {data-icon=book}
---------------------------------------------------------------------------------
+<!-- Completed Courses {data-icon=book} -->
+<!-- -------------------------------------------------------------------------------- -->
 
-```{r}
-CV %<>% print_section('Courses')
-```
+<!-- ```{r} -->
+<!-- CV %<>% print_section('Courses') -->
+<!-- ``` -->
 
 
 
-```{r}
-CV %<>% print_links()
-```
+<!-- ```{r} -->
+<!-- CV %<>% print_links() -->
+<!-- ``` -->
 
